@@ -15,7 +15,7 @@ The SimpleDB buffer manager is grossly inefficient in two ways:
 
 Project Description
 
-Task 1 (Optional). Extended the FileMgr class so that it includes code for maintaining useful statistics such as number of blocks read/written. Added a new method getFileStatistics() to the class that will return these statistics. Modified the methods commit and rollback of the class RemoteConnectionImpl (in package simpledb.remote) so that they print these statistics. The result will be that the server prints the statistics for each SQL statement it executes. Note that your code can obtain the FileMgr object by calling the static method SimpleDB.fileMgr (in the package simpledb.server).
+Task 1: Extended the FileMgr class so that it includes code for maintaining useful statistics such as number of blocks read/written. Added a new method getFileStatistics() to the class that will return these statistics. Modified the methods commit and rollback of the class RemoteConnectionImpl (in package simpledb.remote) so that they print these statistics. The result will be that the server prints the statistics for each SQL statement it executes. Note that your code can obtain the FileMgr object by calling the static method SimpleDB.fileMgr (in the package simpledb.server).
 
 
 Task 2: Buffer Management. This task has three subtasks: 
@@ -32,7 +32,6 @@ Extended the buffer manager to return useful statistics information like number 
 
 
 Code snippets 	
-Below, methods that we will use to test implementation of the Map for the Buffer pool. Copy them into the respective java files. For our convenience, we have used “bufferPoolMap” as the name of the Map. 
 
 BasicBufferMgr.java 
 /**  
