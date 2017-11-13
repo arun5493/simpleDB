@@ -53,8 +53,9 @@ Buffer getMapping(Block blk) {
 returnbufferPoolMap.get(blk);  
 } 
 ```
-```
+
 BufferMgr.java 
+```
 /**  
 * Determines whether the map has a mapping from  
 * the block to some buffer.  
